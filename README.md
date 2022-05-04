@@ -38,5 +38,13 @@ Source:
 ## Testing 
 Integration test are in place with Cypress. [Read more on how to setup and run Cypress tests](https://github.com/skounis/eu-dcc-validation/wiki/E2E-Tests---Setup-and-Run).
 
+# Licensing
+Copyright (c) 2022 Stavros Kounis (Directorate-General CONNECT) and all other contributors
+
+Licensed under the EUROPEAN UNION PUBLIC LICENCE v. 1.2 (the "License"); you may not use this file except in compliance with the [License](./LICENSE.txt).
+
+You may obtain a copy of the License at https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12.
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the LICENSE for the specific language governing permissions and limitations under the License.
 
 
