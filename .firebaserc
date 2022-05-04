@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "ionic-attendee-scanner"
-  }
+    "default": "eu-dcc-verifier",
+    "production": "eu-dcc-verifier"
+  },
+  "targets": {}
 }
