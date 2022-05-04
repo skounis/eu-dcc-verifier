@@ -1,0 +1,62 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Verify EU-DCC
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list class="ion-no-padding">
+    <ion-item color="success" *ngIf="!isEmpty(dcc) && !!verified">
+      <ion-icon name="information-circle-outline" slot="start"></ion-icon>
+      <ion-label class="ion-text-wrap">
+        <span>The certificate is verified.</span>
+      </ion-label>
+    </ion-item>
+    <ion-item color="danger" *ngIf="!isEmpty(dcc) && !verified">
+      <ion-icon name="alert-circle-outline" slot="start"></ion-icon>
+      <ion-label class="ion-text-wrap">
+        <span>The certidicate is invalid.</span>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <div class="ion-margin-vertical ion-padding-horizontal be-home">
+    <div class="be-empty-state ion-text-center" *ngIf="!scannerEnabled && isEmpty(dcc)">
+      <ion-icon name="scan-circle-outline" (click)="startScan()"></ion-icon>
+      <h3>Start scan!</h3>
+      <p>To check an attendee in/out, please, <a (click)="startScan()">scan the QR code</a>. </p>
+    </div>
+
+    <zxing-scanner class="ion-margin-vertical" *ngIf="scannerEnabled"
+               [formats]="['QR_CODE']"
+               [enable]="scannerEnabled"
+               (scanSuccess)="onScanSuccess($event)"
+               (camerasFound)="onCameraFound($event)"
+               (camerasNotFound)="onCameraNotFound($event)"></zxing-scanner>
+
+    <ngx-json-viewer [json]="dcc" [depth]="4"></ngx-json-viewer>
+  </div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-grid class="ion-no-padding">
+    <ion-row>
+      <ion-col size="8" class="ion-no-padding">
+        <ion-button expand="full" size="large" class="ion-no-margin"
+        (click)="startScan()" [disabled]="scannerEnabled">
+          Scan
+        </ion-button>
+      </ion-col>
+      <ion-col size="4" class="ion-no-padding">
+        <ion-button expand="full" size="large" class="ion-no-margin" color="danger"
+          [disabled]="!scannerEnabled" (click)="cancelScan()">
+            Cancel
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

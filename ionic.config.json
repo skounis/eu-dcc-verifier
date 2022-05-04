@@ -1,0 +1,7 @@
+{
+  "name": "ionic-attendee-scanner",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
