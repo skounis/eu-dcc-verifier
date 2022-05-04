@@ -13,3 +13,7 @@
 ion-content {
   --overflow: hidden;
 }
+
+ion-content.as-scroll {
+  --overflow: auto;
+}
