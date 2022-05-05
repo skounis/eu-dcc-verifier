@@ -29,6 +29,7 @@
       <ion-icon name="scan-circle-outline" (click)="startScan()"></ion-icon>
       <h3>Start scan!</h3>
       <p>To check an attendee in/out, please, <a (click)="startScan()">scan the QR code</a>. </p>
+      <p style="margin-top: 2rem;"><a href="https://github.com/skounis/eu-dcc-verifier" target="_blank">Get the source code</a>.</p>
     </div>
 
     <zxing-scanner class="ion-margin-vertical" *ngIf="scannerEnabled"
