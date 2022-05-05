@@ -15,6 +15,9 @@ For validation the singature the application uses the production DCSs trustling 
 
 * https://de.dscg.ubirch.com/trustList/DSC/
 
+## Live Demo
+* [Deployed app](https://eu-dcc-verifier.web.app/home)
+
 ## Dependecies, Run and Build
 
 ### Install local dependencies
@@ -45,9 +48,6 @@ versionName "1.0.0"
 
 Source:
 - https://capacitorjs.com/docs/android/deploying-to-google-play
-
-## Demo
-* [Deployed app](https://eu-dcc-verifier.web.app/home)
 
 ## Testing 
 Integration test are in place with Cypress. [Read more on how to setup and run Cypress tests](https://github.com/skounis/eu-dcc-validation/wiki/E2E-Tests---Setup-and-Run).
