@@ -52,6 +52,12 @@ Source:
 ## Testing 
 Integration test are in place with Cypress. [Read more on how to setup and run Cypress tests](https://github.com/skounis/eu-dcc-validation/wiki/E2E-Tests---Setup-and-Run).
 
+# Contributors 
+
+<a href="https://github.com/skounis/eu-dcc-verifier/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=skounis/eu-dcc-verifier" />
+</a>
+
 # Licensing
 Copyright (c) 2022 Stavros Kounis (Directorate-General CONNECT) and all other contributors
 
