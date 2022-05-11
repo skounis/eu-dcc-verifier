@@ -1,3 +1,5 @@
+> This repository in archived in favor of https://github.com/ehn-dcc-development/eu-dcc-verifier-ionic
+
 # Ionic EU-DCC Verifier
 [![Issues](https://img.shields.io/github/issues/skounis/eu-dcc-verifier?style=for-the-badge)](https://github.com/skounis/eu-dcc-verifier/issues) [![License](https://img.shields.io/github/license/skounis/eu-dcc-verifier?style=for-the-badge)](https://github.com/skounis/eu-dcc-verifier#licensing) [![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=for-the-badge)](https://eu-dcc-verifier.web.app/)
 
